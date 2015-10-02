@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - LACES Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+     <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+
+    <h1 class="title">LACES STYLE GUIDE</h1>
+
+    <nav>
+      
+      <p>
+        On this page:
+      </p>
+      <ul>
+        <li>
+          <a href="#interactive_elements">Interactive Elements</a>
+        </li>
+        <li>
+          <a href="#text_elements">Text Elements</a>
+        </li>
+        <li>
+          <a href="#combined_elements">Combined Elements</a>
+        </li>
+      </ul>
+
+      <p>Other pages:</p>
+      <ul>
+        <li><a href="http://www.sfu.ca/~jhpoon/IAT339/Week3%20Assignment/wireframes/4k_display.html">4k Display Wireframes</a>
+        <li><a href="http://www.sfu.ca/~jhpoon/IAT339/Week3%20Assignment/wireframes/smartphone.html">Smartphone Wireframes</a>
+        <li><a href="http://www.sfu.ca/~jhpoon/IAT339/Week3%20Assignment/wireframes/smartwatch.html">Smartwatch wireframes</a>
+      </ul>
+
+      <p>Citations</p>
+      <ul>
+      <li><a href="Citations.html">Citations</a>
+      </ul>
+
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section>
+
+        <h2 class="headings">Navigation Button</h2>
+
+        <h3 class="subheadings">CSS selector:</h3>
+        <p>.button-nav</p>
+
+        <h3 class="subheadings">Sample code:</h3>
+        <code>&lt;a href="#" class="button"&gt;SHOP&lt;/a&gt;</code>
+
+        <h3 class="subheadings">Rendered element:</h3>
+        <a class="button-nav" href="#">SHOP</a>
+
+      </section>
+
+      <section>
+        <h2 class="headings">In-text link</h2>
+        
+        <h3 class="subheadings">CSS selector:</h3>
+        <p>a</p>
+
+        <h3 class="subheadings">Rendered element:</h3>
+
+        <p>The Nike Kobe Venomenom 8 is made from a combination materials that enhances the user's <a href="http://www.sfu.ca/~jhpoon/IAT339/"> agility and strength.</a> Users can jump higher and land safely due to reduced impact.</p>
+
+        <h3 class="subheadings">Sample code:</h3>
+        <code>&lt;p&gt;The Nike Kobe Venomenom 8 is made from a combination materials that enhances the user's&lt;a href="http://www.sfu.ca/~jhpoon/IAT339"&gt;agility and strength.&lt;/a&gt; Users can jump higher and land safely due to reduced impact.&lt;/p&gt; </code>
+
+      </section>
+
+      <section>
+        <h2 class="headings">Submit/Reset Buttons</h2>
+
+        <h3 class="subheadings">CSS selector:</h3>
+        <p>.button-submit</p>
+
+        <h3 class="subheadings">Sample code:</h3>
+        <code>&lt;a href="#" class="button-submit"&gt;Submit your Review&lt;/a&gt;</code>
+
+        <h3 class="subheadings">Rendered element:</h3>
+        <a class="button-submit" href="#">Submit your Review</a>
+
+      </section>
+
+      <section id="textarea">
+        <h2 class="headings">Text Input Field</h2>
+
+        <h3 class="subheadings">CSS selector:</h3>
+          <p>textarea, input</p>
+
+        <h3 class="subheadings">Rendered element:</h3>
+
+          <form method="post" action="#">
+
+          <label for="form-name">Name:</label>
+          <input type="text" id="form-name">
+
+          <label for="form-comment">Review:</label>
+          <textarea id="form-comment" placeholder="Please leave a comment here"></textarea>
+
+          </form>
+
+        <h3 class="subheadings">Sample code:</h3>
+        <code>&lt;textarea id="form-comment" placeholder="Please leave a comment here"&gt;&lt;/textarea&gt;</code>
+
+
+
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section>
+        <h2 class="headings">Headings</h2>
+
+        <h3 class="subheadings">CSS selector:</h3>
+        <p>h1, h2 ,h3</p>
+
+        <h3 class="subheadings">Rendered Elements</h3>
+        
+        <h1>Shop (3em)</h1>
+        <h2>Nike Kobe Venomenom (2em)</h2>
+        <h3>In stock - avaliable for raincheck (1.5em)</h3>
+
+        <h3 class="subheadings">Sample Code:</h3>
+        <code>&lt;h1&gt;Shop (3em)&lt;/h1&gt;</code>
+        <code>&lt;h2&gt;Nike Kobe Venomenom&lt;/h2&gt;</code>
+
+
+
+      </section>
+
+      <section>
+        <h2 class="headings">Paragraphs</h2>
+
+        <h3 class="subheadings">CSS selector:</h3>
+        
+        <p>p</p>
+
+        <h3 class="subheadings">Rendered Elements</h3>
+
+        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a gravida ex. Cras auctor arcu ut mi consectetur fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce non lectus vel leo bibendum aliquet sit amet vel dui.</p>
+
+        <h3 class="subheadings">Sample Code</h3>
+        
+        <code>&lt;p&gt;Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a gravida ex. Cras auctor arcu ut mi consectetur fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce non lectus vel leo bibendum aliquet sit amet vel dui.&lt;/p&gt;</code>
+
+
+      </section>
+
+      <section>
+        <h2 class="headings">Bulleted Lists</h2>
+
+        <h3 class="subheadings">CSS selector</h3>
+        <p>ul, li</p>
+
+        <h3 class="subheadings">Rendered Element</h3>
+          <ul>
+            <li>Smooth leather upper with metallic gold accents and miniature perforated “X”s</li>
+            <li>Lunarlon foam has forefoot flex grooves to enhance natural motion.</li>
+          </ul>
+
+        <h3 class="subheadings">Sample Code</h3>
+          <code>&lt;ul&gt;</code>
+            <code>&lt;li&gt;Smooth leather upper with metallic gold accents and miniature perforated “X”s&lt;/li&gt;</code>
+            <code>&lt;li&gt;Lunarlon foam has forefoot flex grooves to enhance natural motion.&lt;/li&gt;</code>
+          <code>&lt;/ul&gt;</code>
+
+
+
+      </section>
+
+      <section>
+        <h2 class="headings">Numbered Lists</h2>
+
+        <h3 class="subheadings">CSS selector</h3>
+        <p>ol,li/p>
+
+        <h3 class="subheadings">Rendered Element</h3>
+          <ol>
+            <li>Navigate home page</li>
+            <li>Search and filter for products</li>
+            <li>Click on product result</li>
+            <li>Buy product by adding to cart</li>
+          </ol>
+
+        <h3 class="subheadings">Sample Code</h3>
+          <code>&lt;ul&gt;</code>
+            <code>&lt;li&lt;Smooth leather upper with metallic gold accents and miniature perforated “X”s&lt;/li&gt;</code>
+            <code>&lt;li&gt;Lunarlon foam has forefoot flex grooves to enhance natural motion.&lt;/li&gt;</code>
+          <code>&lt;/ul&gt;</code>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2 class="headings">Navigation Menu</h2>
+
+        <h3 class="subheadings">CSS selector</h3>
+        <p>.mainNavigation, .box-items-nav, .mainNavButton</p>
+        
+
+        <h3 class="subheadings">Rendered Element</h3>
+
+        <nav class="mainNavigation">
+          <div class="box-items-nav">
+            <a href="#SHOP" class="mainNavButton">SHOP</a>
+          </div>
+          <div class="box-items-nav">
+            <a href="#ACCOUNT" class="mainNavButton">ACCOUNT</a>
+           </div>
+          <div class="box-items-nav">
+           <a href="#SEARCH" class="mainNavButton">SEARCH</a>
+          </div>
+          <div class="box-items-nav">
+           <a href="#ABOUT" class="mainNavButton">ABOUT</a>
+          </div>
+        </nav>
+
+
+        <h3 class="subheadings">Sample Code</h3>'
+          
+          <code>&lt;nav class="mainNavigation"&gt;</code>
+            <code>&lt;div class="box-items-nav"&gt;</code>
+            <code>&lt;a href="#SHOP" class="mainNavButton"&gt;SHOP&lt;/a&gt;</code>
+          <code>&lt;/div&gt;</code>
+          <code>&lt;div class="box-items-nav"&gt;</code>
+            <code>&lt;a href="#ACCOUNT" class="mainNavButton"&gt;ACCOUNT&lt;/a&gt;</code>
+          <code>&lt;/div&gt;</code>
+          
+
+
+
+      </section>
+
+      <section>
+        <h2 class="headings">Product Listing</h2>
+
+        <h3 class="subheadings">CSS selector</h3>
+        <p>.colorPallet</p>
+
+        <h3 class="subheadings">Rendered Element</h3>
+          
+          <figure class="colorPallet">
+            <img src="img/colorPallet1.png" alt="a green square"><figcaption>#B5E2A6</figcaption>
+          </figure>
+          
+          <figure class="colorPallet">  
+            <img src="img/colorPallet2.png" alt="a purple square"><figcaption>#BBB5CC</figcaption>
+          </figure>
+          
+          <figure class="colorPallet">
+            <img src="img/colorPallet3.png" alt="a grey square"><figcaption>#D1D2D4</figcaption>
+          </figure>
+         
+          
+
+        <h3 class="subheadings">Sample Code</h3>
+
+        <code>&lt;figure class="colorPallet&gt;</code>
+          <code>&lt;img src="img/colorPallet1.png alt="a green square"&gt;&lt;figcaption&gt;#B5E2A6</code>
+          <code>&lt;/figcaption&gt;</code>
+        <code>&lt;/figure&gt;</code>
+
+        <code>&lt;figure class="colorPallet&gt;</code>
+          <code>&lt;img src="img/colorPallet2.png alt="a purple square"&gt;&lt;figcaption&gt;#BBB5CC></code>
+          <code>&lt;/figcaption&gt;</code>
+        <code>&lt;/figure&gt;</code>
+
+
+
+
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+
+  </body>
+</html>
