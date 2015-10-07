@@ -3,7 +3,7 @@
   Default styling for the style guide 
 */
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 2rem;
 }
 
@@ -28,7 +28,17 @@ section p {
 
 a:link
 {
-  color: #B5E2A6;
+  color: #75FF75;
+}
+
+a.button-nav, a.button-submit
+{
+  color: #4D94FF;
+}
+
+a.button-nav:hover, a.button-submit:hover
+{
+  color: #FFF;
 }
 
 a:visited
@@ -38,12 +48,12 @@ a:visited
 
 a:hover
 {
-  color:#339900;
+  color:#75FF75;
 }
 
 a:active
 {
-  color: #B5E2A6;
+  color: #75FF75;
 }
 
 
@@ -92,14 +102,14 @@ h1.title
 {
   display: block;
   font-size: 3em;
-  color: #339900;
+  color: #75FF75;
   font-weight: bolder;
 }
 
 h2.headings
 {
   display: block;
-  color: #BBB5CC;
+  color: #9933FF;
   font-size: 2em;
   font-weight: bolder;
 }
@@ -107,7 +117,7 @@ h2.headings
 h3.subheadings
 {
   display:block;
-  color: #B5E2A6; 
+  color: #75FF75; 
   font-size: 1.5em;
 }
 
@@ -115,10 +125,10 @@ h3.subheadings
 .button-nav {
   display: inline-block;
   padding: 0.4em;
-  color: #339900;
+  color: #4D94FF;
   font-size: 1.3em;
   background-color: #FFF;
-  border:0.1em solid #B5E2A6;
+  border:0.1em solid #4D94FF;
   border-radius: 0.25em;
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
@@ -126,7 +136,7 @@ h3.subheadings
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: ##339900;
+  background-color: #4D94FF;
 }
 
 
@@ -134,10 +144,10 @@ h3.subheadings
 {
   display: inline-block;
   padding: 0.4em;
-  color:#B5E2A6;
+  color:#4D94FF;
   font-size: 1.3em;
   background-color:#FFF;
-  border:0.1em solid #B5E2A6;
+  border:0.1em solid #4D94FF;
   border-radius: 0.25em;
   text-decoration: none;
   -webkit-transition: background-color 0.5s ease-out;
@@ -145,7 +155,7 @@ h3.subheadings
 }
 
 .button-submit:hover, .button-submit:focus{
-  background-color: #FFF;
+  background-color: #4D94FF;
 }
 
 label, input, textarea
@@ -162,21 +172,21 @@ h1
 {
   display: block;
   font-size: 3em;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h2
 {
   display: block;
   font-size: 2em;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 h3
 {
   display: block;
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 
