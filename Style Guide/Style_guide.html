@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 
-<!-- // Rachael was here. -->
-
 <html>
 
   <head>
 
     <meta charset="utf-8">
-    <title>P01 - LACES Style Guide</title>
+    <title>HUGS STYLEGUIDE</title>
 
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/main.css" rel="stylesheet">
 
-     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
   </head>
 
   <body>
 
-    <h1 class="title">LACES STYLE GUIDE</h1>
+    <div class="logo">
+    <img src="img/hugsLogo.png" alt="hugs logo"/>
+    <h1 class="title">Hugs Styleguide</h1>
+    </div>
 
-    <nav>
+    <div class="titlePage">
       
       <p>
-        On this page:
+      On this page:
       </p>
       <ul>
         <li>
@@ -37,6 +38,7 @@
       </ul>
 
       <p>Other pages:</p>
+      
       <ul>
         <li><a href="http://www.sfu.ca/~jhpoon/IAT339/Week3%20Assignment/wireframes/4k_display.html">4k Display Wireframes</a>
         <li><a href="http://www.sfu.ca/~jhpoon/IAT339/Week3%20Assignment/wireframes/smartphone.html">Smartphone Wireframes</a>
@@ -48,7 +50,7 @@
       <li><a href="Citations.html">Citations</a>
       </ul>
 
-    </nav>
+    </div>
 
 
 
@@ -79,10 +81,10 @@
 
         <h3 class="subheadings">Rendered element:</h3>
 
-        <p>The Nike Kobe Venomenom 8 is made from a combination materials that enhances the user's <a href="http://www.sfu.ca/~jhpoon/IAT339/"> agility and strength.</a> Users can jump higher and land safely due to reduced impact.</p>
+        <p>The fresh Nike Air Huarache keeps it classic with original cushioning and heel strap for a breathable, supportive fit. Featuring <a href="http://www.sfu.ca/~jhpoon/IAT339/">slime green laces</a> and speckles. Like a friendly squeeze, these hugs are basic but sweet.</p>
 
         <h3 class="subheadings">Sample code:</h3>
-        <code>&lt;p&gt;The Nike Kobe Venomenom 8 is made from a combination materials that enhances the user's&lt;a href="http://www.sfu.ca/~jhpoon/IAT339"&gt;agility and strength.&lt;/a&gt; Users can jump higher and land safely due to reduced impact.&lt;/p&gt; </code>
+        <code>&lt;p&gt;The fresh Nike Air Huarache keeps it classic with original cushioning and heel strap for a breathable, supportive fit. Featuring &lt;a href="http://www.sfu.ca/~jhpoon/IAT339"&gt;slime green laces&lt;/a&gt; and speckles. Like a friendly squeeze, these hugs are basic but sweet.&lt;/p&gt; </code>
 
       </section>
 
@@ -92,13 +94,18 @@
         <h3 class="subheadings">CSS selector:</h3>
         <p>.button-submit</p>
 
-        <h3 class="subheadings">Sample code:</h3>
-        <code>&lt;a href="#" class="button-submit"&gt;Submit your Review&lt;/a&gt;</code>
-
         <h3 class="subheadings">Rendered element:</h3>
-        <a class="button-submit" href="#">Submit your Review</a>
+        
+        <a href="#">
+        <a class="button-buy" href="#">Create Account</a>
+        </a>
+
+        <h3 class="subheadings">Sample code:</h3>
+        <code>&lt;a class="button-submit" href="#" &gt;Create Account&lt;/a&gt;</code>
 
       </section>
+
+      <!--TEXT INPUT FIELDS -->
 
       <section id="textarea">
         <h2 class="headings">Text Input Field</h2>
@@ -108,24 +115,32 @@
 
         <h3 class="subheadings">Rendered element:</h3>
 
-          <form method="post" action="#">
+          <form>
+                  <div>
+                    <input type="email" name="login[username]" class="accountInput" placeholder="Email"/>
+                  </div>
+                  
+                  <div>
+                     <input type="password" name="login[password]" class="accountInput" placeholder="Password"/>
+                  </div>
 
-          <label for="form-name">Name:</label>
-          <input type="text" id="form-name">
-
-          <label for="form-comment">Review:</label>
-          <textarea id="form-comment" placeholder="Please leave a comment here"></textarea>
+                  <div>
+                  <a href ="#">
+                  <a class="button-submit">Login</a>
+                  </a>  
+                 </div>
 
           </form>
 
         <h3 class="subheadings">Sample code:</h3>
-        <code>&lt;textarea id="form-comment" placeholder="Please leave a comment here"&gt;&lt;/textarea&gt;</code>
+        <code>&lt;input type="email" name="login[username]" class="accountInput" placeholder="Email"&gt;/&lt;</code>
 
 
 
       </section>
 
     </section>
+
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
@@ -142,12 +157,12 @@
         <h3 class="subheadings">Rendered Elements</h3>
         
         <h1>Shop (3em)</h1>
-        <h2>Nike Kobe Venomenom (2em)</h2>
+        <h2>Nike Huarache (2em)</h2>
         <h3>In stock - avaliable for raincheck (1.5em)</h3>
 
         <h3 class="subheadings">Sample Code:</h3>
         <code>&lt;h1&gt;Shop (3em)&lt;/h1&gt;</code>
-        <code>&lt;h2&gt;Nike Kobe Venomenom&lt;/h2&gt;</code>
+        <code>&lt;h2&gt;Nike Huarache&lt;/h2&gt;</code>
 
 
 
@@ -162,11 +177,11 @@
 
         <h3 class="subheadings">Rendered Elements</h3>
 
-        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a gravida ex. Cras auctor arcu ut mi consectetur fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce non lectus vel leo bibendum aliquet sit amet vel dui.</p>
+        <p>The fresh Nike Air Huarache keeps it classic with original cushioning and heel strap for a breathable, supportive fit. Featuring slime green laces and speckles.</p>
 
         <h3 class="subheadings">Sample Code</h3>
         
-        <code>&lt;p&gt;Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam a gravida ex. Cras auctor arcu ut mi consectetur fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce non lectus vel leo bibendum aliquet sit amet vel dui.&lt;/p&gt;</code>
+        <code>&lt;p&gt;The fresh Nike Air Huarache keeps it classic with original cushioning and heel strap for a breathable, supportive fit. Featuring slime green laces and speckles.&lt;/p&gt;</code>
 
 
       </section>
@@ -201,8 +216,8 @@
 
         <h3 class="subheadings">Rendered Element</h3>
           <ol>
-            <li>Navigate home page</li>
-            <li>Search and filter for products</li>
+            <li>Smooth leather upper with metallic gold accents and miniature perforated “X”s</li>
+            <li>Lunarlon foam has forefoot flex grooves to enhance natural motion.</li>
             <li>Click on product result</li>
             <li>Buy product by adding to cart</li>
           </ol>
@@ -227,12 +242,13 @@
         <h2 class="headings">Navigation Menu</h2>
 
         <h3 class="subheadings">CSS selector</h3>
+
         <p>.mainNavigation, .box-items-nav, .mainNavButton</p>
         
 
         <h3 class="subheadings">Rendered Element</h3>
 
-        <nav class="mainNavigation">
+<!--         <nav class="mainNavigation">
           <div class="box-items-nav">
             <a href="#SHOP" class="mainNavButton">SHOP</a>
           </div>
@@ -240,15 +256,69 @@
             <a href="#ACCOUNT" class="mainNavButton">ACCOUNT</a>
            </div>
           <div class="box-items-nav">
-           <a href="#SEARCH" class="mainNavButton">SEARCH</a>
-          </div>
-          <div class="box-items-nav">
            <a href="#ABOUT" class="mainNavButton">ABOUT</a>
           </div>
-        </nav>
+          <div class="box-items-nav">
+           <a href="#CART" class="mainNavButtonCart">CART</a>
+          </div>
+        </nav> -->
+
+        <div id="wrapper">
+
+    <div id="header">
+
+      <header id="top">
+
+          <nav class="grid">
+
+            <ul class="brand">
+
+               <div class="col-1of6">
+                    <li class="nav-toggle hugsLogo shown">
+                      <img class="logo" src="img/hugsLogo.png" ialt="The letter H resembling a hug.">
+                </div>
+
+                <div class="col-1of6">
+                    <li class="nav-toggle hugs shown">
+                      <a href="index.html" class="brand-name">Hugs</a></li>
+                </div>
+
+                <div class="col-1of6">
+                    <li class="tagline nav-toggle shown">Have you hugged your foot today?</li>
+                </div>
+
+            </ul>
+
+            <ul id="nav" class="right">
+
+                <div class="col-1of6">
+                    <li><a href="index.html">Shop</a></li>
+                </div>
+
+                <div class="col-1of6">
+                    <li><a href="about.html">About</a></li>
+                </div>
+
+                <div class="col-1of6">
+                    <li><a href="login.html">Login</a></li>
+                </div>
+
+                <div class="col-1of6">
+                    <li><a href="cart.html" class="cart">Cart</a></li>
+                </div>
+
+            </ul>
+
+          </nav>
+
+        </header>
+
+    </div>
+
+  </div>
 
 
-        <h3 class="subheadings">Sample Code</h3>'
+        <h3 class="subheadings1">Sample Code</h3>'
           
           <code>&lt;nav class="mainNavigation"&gt;</code>
             <code>&lt;div class="box-items-nav"&gt;</code>
@@ -271,34 +341,179 @@
 
         <h3 class="subheadings">Rendered Element</h3>
           
-          <figure class="colorPallet">
-            <img src="img/colorPallet1.png" alt="a green square"><figcaption>#75FF75</figcaption>
-          </figure>
           
-          <figure class="colorPallet">  
-            <img src="img/colorPallet2.png" alt="a purple square"><figcaption>#9933FF</figcaption>
-          </figure>
+
+
+
+
+
+<div id="content">
+
+<div class="copy divide">
+  <h4 class="shopCategory">Squeeze $120</h4>
+</div>
+
+          <div class="grid-row grid-pad">
+
+            <div class="grid-col-1of6">
+              <figure>
+              <a class="product" href="#">
+                <img class="shopShoe" src="img/squeeze1.png" alt="Nike Huarache Squeeze Slime">
+              </a>
+                <figcaption>
+                  <p class="shop">Green</p>
+                  <p class="shopSub">"Slime"</p>
+                </figcaption>
+              </figure>
+            </div>
           
-          <figure class="colorPallet">
-            <img src="img/colorPallet3.png" alt="a grey square"><figcaption>#D1D2D4</figcaption>
-          </figure>
+            <div class="grid-col-1of6">
+              <figure>
+                <img class="shopShoe" src="img/squeeze2.png" alt="Nike Huarache Squeeze Whale">
+                <figcaption>
+                  <p class="shop">Blue</p>
+                  <p class="shopSub">"Whale"</p>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="grid-col-1of6">
+              <figure>
+                <img class="shopShoe" src="img/squeeze3.png" alt="Nike Huarache Squeeze Blue's Girl">
+                <figcaption>
+                  <p class="shop">Magenta</p>
+                  <p class="shopSub">"Blue's Girl"</p>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="grid-col-1of6">
+              <figure>
+                <img class="shopShoe" src="img/squeeze4.png" alt="Nike Huarache Squeeze Tamale" >
+                <figcaption>
+                  <p class="shop">Red</p>
+                  <p class="shopSub">"Tamale"</p>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="grid-col-1of6">
+              <figure>
+                <img class="shopShoe" src="img/squeeze5.png" alt="Nike Huarache Sqyeeze Flamingo">
+                <figcaption>
+                  <p class="shop">Pink</p>
+                  <p class="shopSub">"Flamingo"</p>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="grid-col-1of6">
+              <figure>
+                <img class="shopShoe" src="img/squeeze6.png" alt="Nike Huarache Squeze Lightning">
+                <figcaption>
+                  <p class="shop">Yellow</p>
+                  <p class="shopSub">"Lightning"</p>
+                </figcaption>
+              </figure>
+            </div>
+
+          </div>
+
+    <!--- second row of products -->
+<div class="copy divide">
+  <h4 class="shopCategory">Cradle $160</h4>
+</div>
+
+          <div class="grid-row grid-pad">
+
+            <div class="grid-col-1of6">
+              <figure>
+              <a href="#">
+                <img class="shopShoe" src="img/cradle1.png" alt="Nike Huarache Cradle Wave">
+              </a>
+                <figcaption>
+                  <p class="shop">Navy Blue</p>
+                  <p class="shopSub">"Wave"</p>
+                </figcaption>
+              </figure>
+            </div>
+          
+            <div class="grid-col-1of6">
+              <figure>
+                <img class="shopShoe" src="img/cradle2.png" alt="Nike Huarache Cradel Glowstick">
+                <figcaption>
+                  <p class="shop">Neon Green</p>
+                  <p class="shopSub">"Glowstick"</p>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="grid-col-1of6">
+              <figure>
+                <img class="shopShoe" src="img/cradle3.png" alt="Nike Huarache Cradle Flame">
+                <figcaption>
+                  <p class="shop">Orange</p>
+                  <p class="shopSub">"Flame"</p>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="grid-col-1of6">
+              <figure>
+                <img class="shopShoe" src="img/cradle4.png" alt="Nike Huarache Cradle Grass" >
+                <figcaption>
+                  <p class="shop">Green</p>
+                  <p class="shopSub">"Grass "</p>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="grid-col-1of6">
+              <figure>
+                <img class="shopShoe" src="img/cradle5.png" alt="Nike Huarache Cradle Heat">
+                <figcaption>
+                  <p class="shop">Red</p>
+                  <p class="shopSub">"Heat"</p>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="grid-col-1of6">
+              <figure>
+                <img class="shopShoe" src="img/cradle6.png" alt="Nike Huarache Cradle Blood">
+                <figcaption>
+                  <p class="shop">Rouge</p>
+                  <p class="shopSub">"
+                    Blood"</p>
+                </figcaption>
+              </figure>
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
          
+
+
+
           
 
         <h3 class="subheadings">Sample Code</h3>
 
-        <code>&lt;figure class="colorPallet&gt;</code>
-          <code>&lt;img src="img/colorPallet1.png alt="a green square"&gt;&lt;figcaption&gt;#B5E2A6</code>
-          <code>&lt;/figcaption&gt;</code>
+        <code>&lt;div class="grid-row grid-pad"&gt;</code>
+        <code>&lt;div class="grid-col-1of6"&gt;</code>
+        <code>&lt;figure&gt;</code>
+        <code>&lt;img class="shopShoe" src="img/cradle1.png" alt="Nike Hurrarche"&gt;</code>
+        <code>&lt;figcaption&gt;</code>
+        <code>&lt;p class="shop">Colour&gt;</code>
+        <code>&lt;p class="shopSub">"The Coolest"&gt;</code>
+        <code>&lt;/figcaption&gt;</code>
         <code>&lt;/figure&gt;</code>
-
-        <code>&lt;figure class="colorPallet&gt;</code>
-          <code>&lt;img src="img/colorPallet2.png alt="a purple square"&gt;&lt;figcaption&gt;#BBB5CC></code>
-          <code>&lt;/figcaption&gt;</code>
-        <code>&lt;/figure&gt;</code>
-
-
-
+        <code>&lt;/div&gt;</code>
 
       </section>
 
