@@ -1,0 +1,695 @@
+/* Declaring Fonts */
+
+
+@font-face {
+    font-family: 'OpenSans-ExtraboldItalic';
+    font-weight: bolder;
+    font-style: italic;
+    src: url('fonts/OpenSans-ExtraboldItalic.eot');
+    src: url('fonts/OpenSans-ExtraboldItalic.eot?#iefix') format('embedded-opentype'), 
+         url('fonts/OpenSans-ExtraboldItalic.woff2') format('woff2'), 
+         url('fonts/OpenSans-ExtraboldItalic.woff') format('woff'),
+         url('fonts/OpenSans-ExtraboldItalic.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'OpenSans-SemiboldItalic';
+    font-weight: bold;
+    font-style: italic;
+    src: url('fonts/OpenSans-SemiboldItalic.eot');
+    src: url('fonts/OpenSans-SemiboldItalic.eot?#iefix') format('embedded-opentype'), 
+         url('fonts/OpenSans-SemiboldItalic.woff2') format('woff2'), 
+         url('fonts/OpenSans-SemiboldItalic.woff') format('woff'),
+         url('fonts/OpenSans-SemiboldItalic.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'OpenSans';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/OpenSans.eot');
+    src: url('fonts/OpenSans.eot?#iefix') format('embedded-opentype'), 
+         url('fonts/OpenSans.woff2') format('woff2'), 
+         url('fonts/OpenSans.woff') format('woff'),
+         url('fonts/OpenSans.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/PTSerif.eot');
+    src: url('fonts/PTSerif.eot?#iefix') format('embedded-opentype'), 
+         url('fonts/PTSerif.woff2') format('woff2'), 
+         url('fonts/PTSerif.woff') format('woff'),
+         url('fonts/PTSerif.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PT Serif-Bold';
+    font-weight: bold;
+    font-style: normal;
+    src: url('fonts/PTSerif-Bold.eot');
+    src: url('fonts/PTSerif-Bold.eot?#iefix') format('embedded-opentype'), 
+         url('fonts/PTSerif-Bold.woff2') format('woff2'), 
+         url('fonts/PTSerif-Bold.woff') format('woff'),
+         url('fonts/PTSerif-Bold.ttf') format('truetype');
+}
+
+
+/* Navigation */
+
+nav a {
+	width: 100%;
+}
+
+nav a, nav a:visited {
+	display: inline-block;
+	color: black;
+	padding: 0.5em;
+	font-family: OpenSans-ExtraboldItalic, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+	line-height: 1.1em;
+}
+
+nav a.cart {
+	color: #9A15CC;
+	padding-right: 2.5em;
+}
+
+
+nav a:hover, nav a:active, nav a:focus {
+	color: #15CC7D;
+	outline: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul.brand {
+	float: left;
+	padding-left: 2em;
+}
+
+ul.right {
+	float: right;
+}
+
+@media (max-width: 52em) {
+	
+	.nav-toggle.shown {
+		visibility: hidden;
+		position: absolute;	
+	}
+
+}
+
+@media (max-width: 32em) {
+	
+	nav a.brand-name {
+		padding-bottom: 0;
+	}
+
+	nav ul.right {
+		float: left;
+		padding-left: 2em;
+
+	}
+
+}
+
+li.tagline {
+	display: inline-block;
+	color: black;
+	padding: 0.5em 1.25em;
+  	font-family: PT Serif, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    text-transform: none;
+    text-decoration: none;
+}
+
+
+body {
+	padding: 1em;
+	background-color: #F6F6F6;
+}
+
+/* Shop */
+
+p {
+	font-family: PT Serif, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    text-transform: none;
+}
+
+h4.shopCategory, h4.copyTitle,  h4.price {
+	font-family: OpenSans-SemiboldItalic, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1em;
+	margin-bottom: 0;
+	padding-bottom: 1em;
+	border-bottom: 1px solid black;
+}
+
+h3, p.shop {
+	font-family: PT Serif-Bold, serif;
+	color: #CECECF;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+p.shopSub {
+	margin-top: 5px;
+	color: #F6F6F6;
+}
+
+
+figure:hover figcaption p.shopSub {
+	color: #9A15CC;
+}
+
+
+/* About */
+
+.copy {
+	width: 50%;
+	padding-left: 2.5em;
+
+}
+
+h4.copyTitle {
+	padding-left: 0;
+	padding-bottom: 1em;
+	border-bottom: 1px solid black;
+
+}
+
+a.inText {
+	color: #15CC7D;
+	text-decoration: none;
+}
+
+a.inText:hover {
+	color: #13B870;
+	border-bottom: 1px solid #13B870;
+}
+
+@media (max-width: 57em) {
+
+	.copy {
+		width: 65%;
+		padding-bottom: 3em;
+	}
+
+}
+
+@media (max-width: 32em) {
+
+	.copy, .form {
+		width: 95%;
+	}
+
+}
+
+.divide {
+	width: 95%;
+}
+
+
+/* Login */
+
+.form {
+	padding-left: 2.5em;
+	padding-bottom: 5em;
+}
+
+input {
+    display: block;
+    position: relative;
+    font-family: PT Serif, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    color: #000;
+    background: 0 0;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #9A15CC;
+    box-shadow: none;
+    padding: 0 0 10px;
+    margin: 30px 0 10px;
+    width: 100%;
+}
+
+button.login, button.buy, input[type=submit]{
+    font-family: OpenSans-SemiboldItalic, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    width: 125px;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px 0 0;
+    background: #9A15CC;
+    color: #FFF;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 25px;
+    outline:none;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+  
+}
+
+
+button.login:hover {
+    background-color: black;
+}
+
+button.new {
+	width: 210px;
+}
+
+.new {
+	padding-bottom: 0;
+}
+
+
+/* Product */
+
+h2 {
+	font-family: PT Serif, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    text-transform: none;
+}
+
+h3 {
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-top: 1em
+}
+
+h4.price {
+	font-size: 1.5em;
+	border-bottom: none;
+	padding-left: .25em;
+	margin: 0;
+}
+
+button.buy {
+    color: #000;
+    border: 1px solid #CECECF;
+    background: none; 
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+button.buy:hover {
+    background: #CECECF;
+}
+
+figure.product {
+	padding-top: 1em;
+	padding-left: 2em;
+}
+
+
+/* Footer */
+
+footer {
+	padding-left: 2.5em;
+}
+
+#footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   height: 50px;  
+   background-color: rgba(246, 246, 246, 0.8);
+}
+
+p.foot {
+	color: #9A15CC;
+}
+
+
+/* Old */
+
+.quantityBorder {
+	margin-left:45%;
+	margin-top:25%;
+}
+
+.totalPrice {
+	text-align: center;
+	margin-top: 25%
+}
+
+
+figure {
+	margin: 0;
+	margin-left: 5%
+}
+
+figcaption {
+	text-align: center;
+	font-size: 0.8rem;
+	font-style: bold;
+}
+
+img {
+	height: auto; 
+	width: auto;
+	max-width: 100%;
+}
+
+.grid-col-1of3 figcaption:hover {
+	visibility: visible;
+}
+
+
+article {
+	text-align: left;
+	margin: 2rem 0; 
+	padding: 2rem; 
+	/*border: 1px solid blue;*/
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.grid-col-1of3 h1 {
+	text-align: left;
+	margin:30% 0% 0% 0%;
+}
+
+.shoeInfo {
+	text-align: left;
+	padding-right: 15%;
+
+}
+
+.aboutInfo {
+	text-align: center;
+	margin: 10%;
+	
+
+}
+
+.cartTitle  {
+	text-align: center;
+	margin: 5%;
+}
+
+.grid-col-1of3 .button {
+	float: left;
+	padding: 0.5em 0.7em;
+	color: black;
+	background color: #fefefe;
+	text-decoration: none;
+	border:0.1em solid black;
+	border-radius: 0.25em;
+}
+
+.grid-col-1of3 .button:hover {
+  color: #ADD8E6;
+  border-color: #ADD8E6;
+}
+
+.grid-col-1of3 a {
+	text-decoration: none;
+}
+
+.cartButton {
+	float: left;
+	color: black;
+	background color: #fefefe;
+	margin-top:20%;
+	margin-left:37%;
+	border:0.1em solid black;
+	border-radius: 0.25em;
+	padding: 0.5em 0.7em;
+	text-decoration: none;
+
+}
+
+.cartButton:hover {
+  color: #ADD8E6;
+  border-color: #ADD8E6;
+}
+
+.grid-col-5of10 .form {
+	float:left;
+}
+
+
+.a button {
+	padding: 0.5em 0.7em;*/
+	color: black;
+	background color: #fefefe;
+	text-decoration: none;
+}
+
+.checkoutHeader {
+	background-color:black;
+	color:white;
+	margin: 0em 0em 0em 0em;
+	padding: 10em 0em;
+	text-align: center;
+}
+
+.aboutHeader {
+	background-color:black;
+	color:white;
+	margin: 0em 0em 0em 0em;
+	padding: 12em 0em;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+
+.footer {
+	background-color:black;
+	color:white;
+	margin: 5em 0em 0em 0em;
+	padding: 10em 0em;
+	text-align: center;
+}
+
+
+.introHeader {
+	background-color:black;
+	color:white;
+	margin: 0em 0em 0em 0em;
+	padding: 15em 0em;
+	text-align: center;
+}
+
+.form {
+	text-align: left;
+}
+
+.formField {
+	text-align: left;
+	margin: 25% 25% 25% 0%;
+}
+
+ 
+.nav a.active {
+  color: #ADD8E6;
+  cursor: default;
+}
+
+.icons {
+	margin-left: 49%;
+	margin-top: 5%;
+}
+
+.billingTitle {
+	text-align: right;
+}
+
+
+.grid-col-1of3 h2 {
+	text-align: left;
+	margin:5% 10% 5% 0%;
+}
+
+
+.productTitle {
+	margin:5% 10% 0% 0%;
+}
+
+.checkoutBorder {
+	margin-top: 10%
+}
+
+.additionalImages {
+	margin:0;
+}
+
+.companyIdealIcons {
+	display: block;
+	margin-left: 10%;
+}
+
+.awardicon {
+	margin-left: 7%;
+}
+
+.designicon {
+	margin-left: 17%;
+}
+
+.valueicon {
+	margin-left: 28%;
+}
+
+.aboutIcons {
+	margin-left: 49%;
+	margin-top: 5%;
+}
+
+.aboutFooterIcons {
+	display: block;
+	margin-left: 33%;
+}
+
+.companyIdealText {
+	text-align: center;
+}
+
+.companyText {
+	display: block;
+	text-align: center;
+	margin-right:10%;
+}
+
+.aboutImages {
+	margin-top: 20%;
+}
+
+.companyInfoTitle {
+	margin-top: 10%;
+}
+
+.companyInfo {
+	text-align: left;
+	margin-top: 10%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.sizeButtons {
+	margin-top: 5%;
+
+
+}
+
+.productPrice {
+	margin: 20%;
+	margin-left: 0%;
+	margin-bottom: 5%;
+}
+
+.individualSizeButtons {
+	float: left;
+	padding: 0.5em 0.7em;
+	color: #ADD8E6;
+	background color: #fefefe;
+	text-decoration: none;
+	border:0.1em solid black;
+	border-radius: 0.25em;
+
+	margin-left: 5%
+
+}
+
+.individualSizeButtons:hover {
+	background-color: #ADD8E6;
+	color: #FFF;
+}
+
+.individualSizeButtons:focus {
+	background-color: green;
+}
+
+.aboutImageHeader {
+	margin-left: 7%;
+}
+
+.cartbutton {
+	text-decoration: none;
+}
+
+.cartbutton:hover {
+	color:#ADD8E6;
+}
+
+.checkoutButton {
+
+	float: left;
+	padding: 0.5em 0.7em;
+	color: black;
+	background color: #fefefe;
+	text-decoration: none;
+	border:0.1em solid black;
+	border-radius: 0.25em;
+
+	margin-left: 100%;
+
+}
+
+.checkoutButton:hover {
+	border-color: #ADD8E6;
+	color:#ADD8E6;
+}
+
+.thankYou {
+
+	margin-top:20%;
+	margin-left:15%;
+	color:black;
+
+}
+
+.thankYou2 {
+
+	margin-top:5%;
+	margin-left:43%;
+	color:black;
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,294 @@
+  [class*='col-'] {
+	float: left;
+	padding: 0; 
+	text-align: center; 
+}
+
+
+/* Navigation */
+
+.col-1of8 {
+	width: 12.5%;
+}
+
+.grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.col-5of10 {
+	width: 50%;
+}
+
+@media (max-width: 57em) {
+
+	.col-5of10 {
+		width: 100%;
+	}
+
+}
+
+/* Shop */
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+[class^='grid-col-'] {
+	float: left;
+	padding: 0; 
+}
+
+.grid-col-1of6 {
+	width: 16.66%;
+	padding-right: 1em;
+}
+
+img.shopShoe {
+    max-width: 75%;
+}
+
+.grid-row:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.grid-row:last-of-type {
+	padding-bottom: 5em;
+}
+
+.grid-pad {
+  padding: 20px 0 20px 20px;
+}
+
+@media (max-width: 52em) {
+
+	.grid-col-1of6 {
+		width: 33.33%;
+	}
+
+	.grid-col-1of6, .grid-col-2of6, .grid-col-3of6 {
+		padding-bottom: 20px;
+	}
+
+	.grid-pad {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+}
+
+@media (max-width: 30em) {
+
+	.grid-col-1of6 {
+		width: 50%;
+	}
+
+}
+
+
+/* Login */
+
+.grid-col-1of4 {
+	width: 47.5%;
+	display: block;
+}
+
+@media (max-width: 52em) {
+
+	.grid-col-1of4 {
+	width: 95%;
+	}
+
+}
+
+/* Product */
+
+.grid-col-1of3 {
+	width: 33.33%;
+}
+
+.grid-col-2of3 {
+	width: 63%;
+}
+
+@media (max-width: 52em) {
+
+	.productInformation {
+		width: 100%;
+	}
+
+	.checkoutBorder {
+		width:100%;
+	}
+
+	.grid-col-2of3 {
+		width: 95%;
+	}
+
+	figure.product {
+		padding-left: 0;
+	}
+
+}
+
+@media (max-width: 20em) {
+}
+
+}
+
+
+/* Old grid stuff 
+
+
+.grid-col-5of10, .grid-col-2of10, {
+	width: 100%;
+}
+
+.grid-col-3of10 {
+	width: 33.33%;
+}
+
+.grid-col-1of3 {
+	width: 33.33%;
+}
+
+.grid-col-2of3 {
+	width: 66.66%;
+}
+
+.grid-col-1of4, .grid-col-2of4, .grid-col-3of4, .grid-col-4of4{
+	width:24%;
+}
+
+.grid-col-1of2, .grid-col-2of2 {
+	width:50%;
+}
+
+@media (min-width: 30em) {
+
+	.grid-col-2of10 {
+		width: 20%;
+	}
+
+}
+
+@media (min-width: 50em) {
+
+	.grid-col-5of10, .grid-col-3of10 {
+		width: 50%;
+	}
+
+	.grid-col-5of10:first-of-type {
+		padding-right: 0.5em;
+	}
+
+	.grid-col-5of10:last-of-type {
+		padding-left: 0.5em;
+	}
+
+
+}
+
+@media (max-width: 50em) {
+
+	.grid-col-1of3 {
+		width: 100%;
+	}
+
+	.grid-col-2of3 {
+		width: 100%;
+	}
+
+	.grid-col-1of3:first-of-type {
+		padding-right: 0.5em;
+	}
+
+	.grid-col-1of3:last-of-type {
+		padding-left: 0.5em;
+	}
+
+	.grid-col-2of3:first-of-type {
+		padding-right: 1em;
+	}
+
+	.grid-col-2of3:last-of-type {
+		padding-left: 1em;
+	}
+
+
+}
+
+
+@media (min-width: 50em) {
+
+	.grid-col-1of2, .grid-col-1of2 {
+		width: 50%;
+	}
+
+	.grid-col-1of2:first-of-type {
+		padding-right: 0.5em;
+	}
+
+	.grid-col-1of2:last-of-type {
+		padding-left: 0.5em;
+	}
+
+	.grid-col-2of2:first-of-type {
+		padding-right: 0.5em;
+	}
+
+	.grid-col-2of2:last-of-type {
+		padding-left: 0.5em;
+	}
+
+
+
+}
+
+@media (max-width: 50em) {
+
+	.grid-col-1of4, .grid-col-2of4, .grid-col-3of4, .grid-col-4of4{
+		width: 100%;
+	}
+
+}
+
+@media (min-width: 100em) {
+
+	.grid-col-1of4, .grid-col-2of4, .grid-col-3of4, .grid-col-4of4{
+		width: 50%;
+	}
+
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+
+
+  }
+
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+
+}
+
+}
+
+*/

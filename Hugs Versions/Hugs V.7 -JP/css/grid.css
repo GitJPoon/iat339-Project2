@@ -1,0 +1,194 @@
+/* V.5 */
+
+[class*='col-'] {
+	float: left;
+	padding: 0; 
+	text-align: center; 
+}
+
+
+/* Navigation */
+
+.col-1of8 {
+	width: 12.5%;
+}
+
+.grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.col-5of10 {
+	width: 50%;
+}
+
+@media (max-width: 57em) {
+
+	.col-5of10 {
+		width: 100%;
+	}
+
+}
+
+/* Shop */
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+[class^='grid-col-'] {
+	float: left;
+	padding: 0; 
+}
+
+.grid-col-1of6 {
+	width: 16.66%;
+	padding-right: 1em;
+}
+
+.grid-row:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.grid-pad {
+  padding: 20px 0 20px 20px;
+}
+
+@media (max-width: 52em) {
+
+	.grid-col-1of6 {
+		width: 33.33%;
+	}
+
+	.grid-col-1of6, .grid-col-2of6, .grid-col-3of6 {
+		padding-bottom: 20px;
+	}
+
+	.grid-pad {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+}
+
+@media (max-width: 30em) {
+
+	.grid-col-1of6 {
+		width: 50%;
+	}
+
+}
+
+
+/* Login */
+
+.grid-col-1of4 {
+	width: 47.5%;
+	display: block;
+}
+
+@media (max-width: 52em) {
+
+	.grid-col-1of4 {
+	width: 100%;
+	}
+
+}
+
+/* Product */
+
+.grid-col-1of3 {
+	width: 33.33%;
+}
+
+.grid-col-2of3 {
+	width: 63%;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@media (max-width: 52em) {
+
+	figure.product {
+		padding-left: 0;
+		width: 100%;
+
+	}
+
+	.productImage {
+        order: 1;
+        width:90%;
+    }
+
+    .productCopy {
+    	margin-top:100%;
+        order: 2;
+        width:100%;
+    }
+
+    figure.product {
+	float:left;
+	padding-left: .5em;
+	}
+
+	.checkoutBorder {
+		width:95%;
+	}
+
+}
+
+
+@media (max-width: 30em) {
+	
+	figure.product {
+	padding-left: 1.5em;
+	width: 90%;
+	}
+
+}
+
+/* Cart */
+
+.col-1of4 {
+	width:25%;
+}
+
+@media (max-width: 57em) {
+	.cart {
+		padding-bottom: 0;
+	}
+	.col-1of4 {
+		width:100%;
+	}
+}
+
+/* Checkout */
+
+.col-10of10 {
+	width:100%;
+	margin-bottom: 3%;
+}
+
+.col-4of10 {
+	width: 45%;
+}
+
+.col-2of10 {
+	width:10%;
+}
+
+
